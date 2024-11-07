@@ -1,0 +1,46 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnos Semanales - Alprint</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Turnos Semanales - Empresa Alprint</h1>
+    </header>
+
+    <!-- Nueva tabla resumen -->
+    <section class="summary-table">
+        <h2>Resumen de Turnos</h2>
+        <table id="summaryTable">
+            <thead>
+                <tr>
+                    <th>Nombre del Trabajador</th>
+                    <th>Área Asignada</th>
+                    <th>Turno Asignado</th>
+                    <th>Turno Especial Viernes/Sábado</th>
+                </tr>
+            </thead>
+            <tbody id="summaryTableBody">
+                <!-- Las filas de la tabla se generarán dinámicamente -->
+            </tbody>
+        </table>
+    </section>
+
+    <section class="notice">
+        <h2>Horarios de Turnos</h2>
+        <p>Turno Día: Lunes a Jueves de 7:00 a 19:00</p>
+        <p>Turno Noche: Lunes a Jueves de 19:00 a 07:00</p>
+        <p>Turno Administrativo: Lunes a Jueves de 8:00 a 18:00 y Viernes de 8:00 a 14:00.</p>
+    </section>
+    
+    <section class="schedule">
+        <h2>Turnos por Empleado</h2>
+        <div id="employee-schedule"></div>
+        <button onclick="saveChanges()">Guardar Cambios</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
